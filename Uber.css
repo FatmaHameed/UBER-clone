@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#navBar {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 70px;
+  width: 100%;
+  background-size: 100% 100%;
+}
+#navBar h1 {
+  margin: auto 10px auto 3em;
+  padding: 5px;
+  font-weight: bold;
+}
+#navBar ul {
+  display: flex;
+  /*margin: 18px 10px;
+  justify-content: space-around;
+  align-content: center;*/
+}
+#navBar .rightNav {
+  margin-left: 9em;
+}
+#navBar ul li {
+  /*margin: 5px 3px 6px 3px;
+  padding: 3px 3px;*/
+  margin: 3px 3px 10px 3px;
+  padding: 5px 3px;
+  list-style: none;
+  /*text-align: center;*/
+  position: relative;
+}
+
+#navBar ul li a {
+  /*padding: 20px 20px 20px 13px;*/
+  padding: 20px 10px 20px 13px;
+  display: block;
+  font-family: ;
+  color: white;
+  font-size: 90%;
+  text-decoration: none;
+  line-height: 20px;
+  width: 100%;
+  text-align: center;
+}
+#navBar ul li a:hover {
+  background-color: rgb(84, 84, 84);
+  border-radius: 60px;
+}
+#navBar ul li ul {
+  display: none;
+  background-color: rgb(83, 75, 75);
+  width: 180px;
+  /*margin: 20px -100px 10px 0px;*/
+  padding: 3px 13px 3px 10px;
+  position: absolute;
+}
+#navBar ul li:hover ul {
+  display: block;
+}
+#navBar ul li ul li {
+  display: block;
+  width: 180px;
+}
+#navBar ul li ul li a {
+  padding: 8px 18px;
+  margin: -10px 0px;
+  width: 80%;
+  text-align: left;
+}
+#navBar ul li ul li a:hover {
+  background-color: grey;
+}
