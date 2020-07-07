@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+/*--Styling Nav-bar --*/
 #navBar {
   display: flex;
   background-color: black;
@@ -11,7 +13,7 @@
   background-size: 100% 100%;
 }
 #navBar h1 {
-  margin: auto 10px auto 3em;
+  margin: auto 10px auto 5em;
   padding: 5px;
   font-weight: bold;
 }
@@ -22,7 +24,7 @@
   align-content: center;*/
 }
 #navBar .rightNav {
-  margin-left: 9em;
+  margin-left: 15em;
 }
 #navBar ul li {
   /*margin: 5px 3px 6px 3px;
@@ -38,23 +40,26 @@
   /*padding: 20px 20px 20px 13px;*/
   padding: 20px 10px 20px 13px;
   display: block;
-  font-family: ;
+  font-family: 'Cabin Condensed', sans-serif;
   color: white;
   font-size: 90%;
   text-decoration: none;
   line-height: 20px;
   width: 100%;
   text-align: center;
+  border-radius: 50px;
 }
 #navBar ul li a:hover {
   background-color: rgb(84, 84, 84);
-  border-radius: 60px;
+  transition: 0.3s;
 }
 #navBar ul li ul {
   display: none;
-  background-color: rgb(83, 75, 75);
+  background-color: whitesmoke;
+  color: rgb(59, 58, 58);
   width: 180px;
   /*margin: 20px -100px 10px 0px;*/
+  margin: 1.2px 0 10px 0px;
   padding: 3px 13px 3px 10px;
   position: absolute;
 }
@@ -67,10 +72,35 @@
 }
 #navBar ul li ul li a {
   padding: 8px 18px;
+  background-color: whitesmoke;
+  color: rgb(59, 58, 58);
   margin: -10px 0px;
   width: 80%;
   text-align: left;
+  font-family: 'Cabin Condensed', sans-serif;
+  border-radius: 1px;
 }
 #navBar ul li ul li a:hover {
   background-color: grey;
+  border-radius: 1px;
+  transition: 0.3s;
 }
+#navBar ul button {
+  background-color: whitesmoke;
+  margin: 5px 20px;
+  padding: 5px 10px;
+  border-radius: 40px;
+  border: 1px solid transparent;
+}
+#navBar ul button a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+}
+#navBar ul button:hover {
+  background-color: rgb(209, 206, 206);
+}
+/*making responsiveness of nav. bar */
+
+/*styling background img*/
