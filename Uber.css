@@ -104,3 +104,50 @@
 /*making responsiveness of nav. bar */
 
 /*styling background img*/
+#backgroundImg img {
+  /*background-image: url(./images/1st-img.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;*/
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  /*height: 250px;*/
+}
+/*styling 2nd nav*/
+
+.Nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 70px;
+  width: 90%;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  top: 150px;
+  flex-basis: 30px;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.Nav a div {
+  flex: 1 1 150px;
+  flex: 0 1 150px;
+  padding: 10px;
+  width: 50px;
+  height: 80px;
+  text-align: center;
+}
+#backgroundImg .small {
+  width: 40%;
+}
+.Nav a {
+  text-decoration: none;
+  font-family: 'Cabin Condensed', sans-serif;
+  color: black;
+}
+.Nav a div:hover {
+  border-bottom: 2px solid black;
+  transition: step-end 0.5s;
+}
+
+/* Making 2nd nav responsive*/
