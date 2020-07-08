@@ -243,3 +243,33 @@ img {
   padding-top: 10px;
   line-height: 30px;
 }
+/*Making box-3 responsive*/
+
+/*styling box-4*/
+.box-4 {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  margin: 90px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.box-4 div {
+  flex-basis: 500px;
+}
+.box-4 img {
+  margin-top: 120px;
+}
+.box-4 h3 {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 2.5em;
+  margin-top: 30px;
+}
+.box-4 p {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1em;
+  width: 90%;
+  padding-top: 10px;
+  line-height: 30px;
+}
