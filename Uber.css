@@ -135,7 +135,7 @@
   flex: 0 1 50px;
   padding: 10px;
   width: 50px;
-  height: 80px;
+  height: 79.75px;
   text-align: center;
 }
 #backgroundImg .small {
@@ -148,7 +148,7 @@
   color: black;
 }
 .Nav a div:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 0px solid black;
   transition: step-end 0.5s;
 }
 
@@ -196,6 +196,10 @@
 img {
   width: 100%;
   height: 200px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .box-2 {
   width: 40%;
@@ -273,6 +277,9 @@ img {
   padding-top: 10px;
   line-height: 30px;
 }
+.box-4 hr {
+  width: 50%;
+}
 /*Making box-4 responsive*/
 
 /*styling box5 */
@@ -308,4 +315,132 @@ img {
   padding-top: 10px;
   line-height: 30px;
 }
+
+.box a {
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+a:hover {
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+}
+
 /*Making box-3 responsive*/
+
+/* Styling footer */
+#footer {
+  background-color: black;
+  color: white;
+  padding: 70px 20px;
+  font-family: 'Cabin Condensed', sans-serif;
+}
+#footer div {
+  margin: 30px 50px;
+}
+#footer div h1 {
+  padding-bottom: 20px;
+}
+#footer div h3 {
+  font-size: 1.2em;
+  font-weight: 80;
+  padding-top: 20px;
+}
+#footer .box-6 {
+  display: flex;
+  justify-content: left;
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#footer .box-6 div {
+  flex-basis: 200px;
+}
+
+#footer .box-6 h3 {
+  font-size: 1.5em;
+  font-weight: 80;
+}
+
+#footer .box-6 ul {
+  margin: 10px 0;
+  padding: 10px 0;
+  list-style: none;
+}
+#footer .box-6 ul li {
+  font-size: 1em;
+  width: 100%;
+  padding-top: 10px;
+  line-height: 30px;
+  font-weight: 80;
+}
+#footer .box a {
+  border-bottom: none;
+  padding-bottom: none;
+}
+#footer a:hover {
+  border-bottom: none;
+  transition: none;
+}
+#footer .box-7 {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#footer .box-7 button {
+  padding: 5px 10px;
+  font-weight: bold;
+  margin: 0.5em;
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+}
+#footer .box-7 button:hover {
+  background-color: rgba(175, 171, 171, 0.418);
+}
+#footer .box-7 button i {
+  padding: 5px;
+  font-size: 1.2em;
+}
+#footer .box-7 .box-7b button i {
+  font-size: 1.5em;
+  padding: 3px;
+  float: left;
+}
+#footer .box-7b button {
+  border: 1px solid white;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#footer .box-7b button a span {
+  font-size: 8px;
+  text-align: center;
+  padding-left: 10px;
+}
+.box-7b p {
+  line-height: 10px;
+  text-align: center;
+}
+#footer .box-7c span {
+  padding: 12px;
+  font-size: 0.8em;
+  color: darkgrey;
+}
+#footer .box-7c span:hover {
+  color: white;
+}
+#footer .box-7c p {
+  padding: 12px;
+  font-size: 0.8em;
+  color: darkgrey;
+}
+#footer .box-7c p:hover {
+  color: white;
+}
+/*Making Footer Responsive */
