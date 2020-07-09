@@ -273,3 +273,39 @@ img {
   padding-top: 10px;
   line-height: 30px;
 }
+/*Making box-4 responsive*/
+
+/*styling box5 */
+.box-2.n2 p {
+  width: 100%;
+  border-bottom: none;
+}
+.box-5 {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 50px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.box-5 div {
+  flex-basis: 350px;
+}
+.box-5 div .small {
+  width: 10%;
+  height: 10%;
+}
+.box-5 h3 {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+.box-5 p {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1em;
+  width: 90%;
+  padding-top: 10px;
+  line-height: 30px;
+}
+/*Making box-3 responsive*/
