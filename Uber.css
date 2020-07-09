@@ -13,7 +13,7 @@
   background-size: 100% 100%;
 }
 #navBar h1 {
-  margin: auto 10px auto 5em;
+  margin: auto 10px auto 4em;
   padding: 5px;
   font-weight: bold;
 }
@@ -25,6 +25,9 @@
 }
 #navBar .rightNav {
   margin-left: 15em;
+}
+#navBar .rightNav i {
+  padding-right: 5px;
 }
 #navBar ul li {
   /*margin: 5px 3px 6px 3px;
@@ -62,6 +65,7 @@
   margin: 1.2px 0 10px 0px;
   padding: 3px 13px 3px 10px;
   position: absolute;
+  z-index: 2;
 }
 #navBar ul li:hover ul {
   display: block;
@@ -69,6 +73,7 @@
 #navBar ul li ul li {
   display: block;
   width: 180px;
+  z-index: 2;
 }
 #navBar ul li ul li a {
   padding: 8px 18px;
@@ -110,7 +115,7 @@
   background-size: cover;
   background-position: center;*/
   width: 100%;
-  z-index: 1;
+  z-index: -2;
   position: relative;
   height: 600px;
   /*height: 250px;*/
@@ -123,7 +128,7 @@
   margin: 10px 70px;
   width: 90%;
   background-color: white;
-  z-index: 2;
+  z-index: 0;
   position: absolute;
   top: 150px;
   flex-basis: 30px;
@@ -147,8 +152,8 @@
   font-family: 'Cabin Condensed', sans-serif;
   color: black;
 }
-.Nav a div:hover {
-  border-bottom: 0px solid black;
+.Nav a div:active {
+  border-bottom: 2px solid black;
   transition: step-end 0.5s;
 }
 
@@ -161,7 +166,7 @@
   width: 30%;
   min-height: fit-content;
   top: 250px;
-  z-index: 2;
+  z-index: 0;
   margin: 10px 70px;
   padding: 20px 60px;
 }
