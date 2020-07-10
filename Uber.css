@@ -13,8 +13,8 @@
   background-size: 100% 100%;
 }
 #navBar h1 {
-  margin: auto 10px auto 4em;
-  padding: 5px;
+  margin: auto 2em auto 2em;
+  padding: 0.5%;
   font-weight: bold;
 }
 #navBar ul {
@@ -22,6 +22,7 @@
   /*margin: 18px 10px;
   justify-content: space-around;
   align-content: center;*/
+  justify-content: space-between;
 }
 #navBar .rightNav {
   margin-left: 15em;
@@ -37,6 +38,7 @@
   list-style: none;
   /*text-align: center;*/
   position: relative;
+  min-width: 30px;
 }
 
 #navBar ul li a {
@@ -107,6 +109,89 @@
   background-color: rgb(209, 206, 206);
 }
 /*making responsiveness of nav. bar */
+@media (max-width: 1024px) {
+  #navBar {
+    display: flex;
+    height: 70px;
+    background-size: 100% 100%;
+  }
+  #navBar h1 {
+    margin: auto 2em auto 2em;
+    padding: 2%;
+    font-size: 25px;
+  }
+  #navBar .rightNav {
+    margin-left: 17em;
+  }
+
+  #navBar .rightNav li i {
+    display: flex;
+    padding: 5px 1px;
+    font-size: 15px;
+  }
+
+  #navBar ul li a .res {
+    display: none;
+  }
+  #navBar .leftNav li a {
+    display: none;
+  }
+  #navBar ul button {
+    background-color: whitesmoke;
+    margin: 25px 5px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    height: 30px;
+  }
+  #navBar ul button a {
+    color: black;
+    font-weight: 100;
+    font-size: 15px;
+  }
+}
+@media (max-width: 852px) {
+  #navBar .rightNav {
+    margin-left: 6em;
+  }
+}
+@media (max-width: 768px) {
+  #navBar .rightNav {
+    margin-left: 2em;
+  }
+}
+@media (max-width: 623px) {
+  #navBar .rightNav {
+    margin-left: -9em;
+  }
+}
+@media (max-width: 414px) {
+  #navBar .rightNav {
+    margin-left: -9em;
+  }
+  #navBar h1 {
+    margin: auto 1em auto 1em;
+  }
+}
+@media (max-width: 375px) {
+  #navBar .rightNav {
+    margin-left: -9em;
+  }
+  #navBar h1 {
+    margin: auto 0.2em auto 0.2em;
+  }
+}
+@media (max-width: 320px) {
+  #navBar .rightNav {
+    margin-left: -11em;
+  }
+  #navBar ul li a {
+    display: none;
+  }
+  #navBar h1 {
+    margin: auto 0.5em auto 0.5em;
+  }
+}
 
 /*styling background img*/
 #backgroundImg img {
@@ -134,6 +219,7 @@
   flex-basis: 30px;
   justify-content: space-evenly;
   justify-items: center;
+  border-bottom: 1px solid whitesmoke;
 }
 .Nav a div {
   flex: 1 1 50px;
@@ -153,11 +239,22 @@
   color: black;
 }
 .Nav a div:active {
-  border-bottom: 2px solid black;
+  border-bottom: 10px solid black;
   transition: step-end 0.5s;
 }
 
 /* Making 2nd nav responsive*/
+@media (max-width: 1024px) {
+  .Nav {
+    margin: 10px 50px;
+    top: 60px;
+  }
+}
+@media (max-width: 414px) {
+  .Nav {
+    margin: 10px 20px;
+  }
+}
 
 /*styling other div*/
 #box {
@@ -166,7 +263,7 @@
   width: 30%;
   min-height: fit-content;
   top: 250px;
-  z-index: 0;
+  z-index: -1;
   margin: 10px 70px;
   padding: 20px 60px;
 }
@@ -196,6 +293,65 @@
   transition: step-start 0.4s;
 }
 /* Making box responsive*/
+@media (max-width: 1238px) {
+  #box h2 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 1024px) {
+  #box {
+    top: 160px;
+    margin: 10px 50px;
+  }
+  #box h2 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 586px) {
+  #box {
+    top: 250px;
+    width: 50%;
+  }
+  #box h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 414px) {
+  #box {
+    top: 250px;
+    margin: 10px 20px 10px 25px;
+    width: 58%;
+  }
+  #box h2 {
+    font-size: 1.5em;
+  }
+  #box button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 375px) {
+  #box {
+    margin: 10px 20px;
+    width: 57%;
+  }
+}
+@media (max-width: 320px) {
+  #box {
+    top: 250px;
+    margin: 10px 20px;
+    width: 52%;
+  }
+  #box h2 {
+    font-size: 1.5em;
+  }
+  #box button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 1em;
+  }
+}
 
 /* styling 3rd section*/
 img {
@@ -222,7 +378,32 @@ a {
   padding-top: 10px;
 }
 /*Making box2 responsive*/
-
+@media (max-width: 1024px) {
+  .box-2 {
+    width: 60%;
+    margin: 70px 80px;
+  }
+  .box-2 p {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .box-2 {
+    width: 70%;
+  }
+  .box-2 h2 {
+    font-size: 2.3em;
+  }
+}
+@media (max-width: 414px) {
+  .box-2 {
+    width: 80%;
+    margin: 70px 30px;
+  }
+  .box-2 p {
+    width: 50%;
+  }
+}
 /*styling box3 */
 .box-2.n2 p {
   width: 100%;
@@ -232,13 +413,15 @@ a {
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
-  margin: 50px;
+
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 1;
 }
 .box-3 div {
-  flex-basis: 350px;
+  flex: 1 1 300px;
+  flex: 0 1 300px;
+  margin-top: 50px;
 }
 .box-3 h3 {
   font-family: 'Cabin Condensed', sans-serif;
@@ -253,7 +436,12 @@ a {
   line-height: 30px;
 }
 /*Making box-3 responsive*/
-
+@media (max-width: 320px) {
+  .box-3 div {
+    flex: 1 1 260px;
+    flex: 0 1 260px;
+  }
+}
 /*styling box-4*/
 .box-4 {
   display: flex;
@@ -286,7 +474,29 @@ a {
   width: 50%;
 }
 /*Making box-4 responsive*/
+@media (max-width: 1024px) {
+  .box-4 div {
+    flex-basis: 600px;
+  }
+}
+@media (max-width: 414px) {
+  .box-4 {
+    margin: 50px;
+  }
 
+  .box-4 img {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .box-4 {
+    margin: 30px 50px;
+  }
+
+  .box-4 h3 {
+    font-size: 2em;
+  }
+}
 /*styling box5 */
 .box-2.n2 p {
   width: 100%;
@@ -296,13 +506,14 @@ a {
   display: flex;
   justify-content: space-around;
   justify-items: center;
-  margin: 50px;
+  margin: 70px 50px 90px 50px;
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 1;
 }
 .box-5 div {
   flex-basis: 350px;
+  margin: 50px 0px 70px;
 }
 .box-5 div .small {
   width: 10%;
@@ -330,7 +541,7 @@ a:hover {
   transition: 0.4s;
 }
 
-/*Making box-3 responsive*/
+/*Making box-5 responsive*/
 
 /* Styling footer */
 #footer {
@@ -379,6 +590,9 @@ a:hover {
   line-height: 30px;
   font-weight: 80;
 }
+#footer .box-6 ul li:hover {
+  color: darkgrey;
+}
 #footer .box a {
   border-bottom: none;
   padding-bottom: none;
@@ -402,6 +616,7 @@ a:hover {
   background-color: black;
   color: white;
   border: 1px solid transparent;
+  flex-basis: 50px;
 }
 #footer .box-7 button:hover {
   background-color: rgba(175, 171, 171, 0.418);
@@ -449,3 +664,91 @@ a:hover {
   color: white;
 }
 /*Making Footer Responsive */
+
+@media (max-width: 1024px) {
+  #footer div {
+    margin: 30px 20px 30px 120px;
+  }
+
+  #footer .box-6 {
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+  }
+  #footer .box-6 div {
+    flex-basis: 200px;
+  }
+
+  #footer .box-7 {
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+  }
+
+  #footer .box-7 button:first-child {
+    margin-left: 40px;
+  }
+
+  #footer .box-7b button {
+    width: 130px;
+    text-align: left;
+  }
+  #footer .box-7b button:nth-child(1) {
+    margin-left: 180px;
+  }
+
+  #footer .box-7c p {
+    margin-top: -7px;
+    margin-right: 100px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 768px) {
+  #footer .box-6 div {
+    flex-basis: 200px;
+  }
+
+  #footer .box-7b button:nth-child(1) {
+    margin-left: 40px;
+  }
+
+  #footer .box-7c p {
+    margin-right: 70px;
+    margin-left: -5px;
+  }
+}
+@media (max-width: 718px) {
+  #footer .box-6 div {
+    flex-basis: 100px;
+  }
+}
+
+@media (max-width: 414px) {
+  #footer div {
+    margin: 30px 30px 30px 80px;
+  }
+
+  #footer .box-6 div {
+    flex-basis: 350px;
+  }
+
+  #footer .box-7 {
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+  }
+
+  #footer .box-7 button:first-child {
+    margin-left: -60px;
+  }
+
+  #footer .box-7b button:nth-child(1) {
+    margin-left: 10px;
+  }
+
+  #footer .box-7c p {
+    margin-top: -7px;
+    margin-right: 10px;
+    margin-left: -60px;
+  }
+}
