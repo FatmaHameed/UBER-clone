@@ -734,8 +734,8 @@ a:hover {
 
   #footer .box-7 {
     display: flex;
-    justify-content: left;
     justify-items: center;
+    flex-direction: column;
   }
 
   #footer .box-7 button:first-child {
@@ -747,8 +747,24 @@ a:hover {
   }
 
   #footer .box-7c p {
-    margin-top: -7px;
+    margin-top: 5px;
     margin-right: 10px;
-    margin-left: -60px;
+    margin-left: 10px;
+  }
+  #footer .box-7c span {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 375px) {
+  #footer .box-7 button {
+    padding: 5px 5px;
+  }
+}
+@media (max-width: 320px) {
+  #footer .box-7 button {
+    padding: 5px 1px;
+    margin-left: 5px;
   }
 }
