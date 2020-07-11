@@ -19,9 +19,6 @@
 }
 #navBar ul {
   display: flex;
-  /*margin: 18px 10px;
-  justify-content: space-around;
-  align-content: center;*/
   justify-content: space-between;
 }
 #navBar .rightNav {
@@ -31,18 +28,14 @@
   padding-right: 5px;
 }
 #navBar ul li {
-  /*margin: 5px 3px 6px 3px;
-  padding: 3px 3px;*/
   margin: 3px 3px 10px 3px;
   padding: 5px 3px;
   list-style: none;
-  /*text-align: center;*/
   position: relative;
   min-width: 30px;
 }
 
 #navBar ul li a {
-  /*padding: 20px 20px 20px 13px;*/
   padding: 20px 10px 20px 13px;
   display: block;
   font-family: 'Cabin Condensed', sans-serif;
@@ -63,7 +56,6 @@
   background-color: whitesmoke;
   color: rgb(59, 58, 58);
   width: 180px;
-  /*margin: 20px -100px 10px 0px;*/
   margin: 1.2px 0 10px 0px;
   padding: 3px 13px 3px 10px;
   position: absolute;
@@ -195,15 +187,10 @@
 
 /*styling background img*/
 #backgroundImg img {
-  /*background-image: url(./images/1st-img.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;*/
   width: 100%;
   z-index: -2;
   position: relative;
   height: 600px;
-  /*height: 250px;*/
 }
 /*styling 2nd nav*/
 
